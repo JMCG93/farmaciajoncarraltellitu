@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios | Farmacia Jon Carral Tellitu</title>
+    <link rel="stylesheet" href="styles.css">
+<base target="_blank">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <a href="index.html" class="navbar-brand">
+                <span>🏥</span>
+                Farmacia Jon Carral Tellitu
+            </a>
+            <ul class="navbar-menu" id="navbarMenu">
+                <li><a href="index.html" class="navbar-link">Inicio</a></li>
+                <li><a href="Secciones.html" class="navbar-link">Secciones</a></li>
+                <li><a href="Servicios.html" class="navbar-link active">Servicios</a></li>
+                <li><a href="Ofertas.html" class="navbar-link">Ofertas</a></li>
+                <li><a href="Noticias.html" class="navbar-link">Noticias</a></li>
+                <li><a href="Encuestas.html" class="navbar-link">Encuestas</a></li>
+                <li><a href="Contacto.html" class="navbar-link btn-contact">Contacto</a></li>
+            </ul>
+            <div class="navbar-toggle" id="navbarToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-title">Nuestros Servicios</h1>
+            <p class="page-subtitle">Atención personalizada y profesional para tu salud</p>
+        </div>
+    </header>
+
+    <main class="section">
+        <div class="container">
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem; font-size: 1.1rem; color: var(--gray-dark);">
+                En la farmacia Jon Carral Tellitu, ofrecemos una amplia gama de servicios para satisfacer las necesidades de nuestros clientes. Nuestro compromiso es brindar atención personalizada y productos de alta calidad.
+            </p>
+
+            <div class="servicios-grid">
+                <!-- Dispensación -->
+                <article class="card servicio-card animate-fadeInUp stagger-1">
+                    <div class="servicio-icon">💊</div>
+                    <h3>Dispensación de Medicamentos</h3>
+                    <p>Asesoramiento farmacéutico personalizado sobre el uso adecuado de medicamentos, suplementos nutricionales y productos de cuidado personal. Nuestro equipo de farmacéuticos cualificados te guiará en tu tratamiento.</p>
+                    <img src="fotos/dispensacion medicamentos.jpg" alt="Dispensación de medicamentos" style="width: 100%; border-radius: var(--radius-sm); margin-top: 1.5rem;">
+                </article>
+
+                <!-- SPD - Sistemas Personalizados de Dosificación -->
+<article class="card servicio-card animate-fadeInUp stagger-2">
+    <div class="servicio-icon">📅</div>
+    <h3>Sistemas Personalizados de Dosificación</h3>
+    <p>Especialistas en SPD (Sistemas Personalizados de Dosificación). Pastilleros organizados semanalmente para mayor comodidad y seguridad en tu tratamiento.</p>
+    
+    <!-- Contenedor de imagen con difuminado -->
+    <div class="spd-imagen-container" style="position: relative; width: 100%; margin-top: 1.5rem; border-radius: var(--radius-sm); overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,0.15);">
+        <img src="fotos/spd1.jpg" alt="Sistemas de dosificación personalizada - SPD" style="width: 100%; height: 280px; object-fit: cover; display: block; filter: blur(2px); transition: filter 0.5s ease;">
+        
+        <!-- Overlay con información -->
+        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(135deg, rgba(13, 115, 119, 0.7), rgba(50, 224, 196, 0.7)); display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 2rem; text-align: center;">
+            <span style="font-size: 3rem; margin-bottom: 1rem;">💊</span>
+            <h4 style="color: white; font-size: 1.3rem; font-weight: 700; margin-bottom: 0.5rem;">Pastillero Semanal</h4>
+            <p style="color: rgba(255,255,255,0.9); font-size: 0.95rem; line-height: 1.6;">Organización por días y tomas<br>Evita confusiones y olvidos</p>
+        </div>
+        
+        <!-- Etiqueta de privacidad -->
+        <div style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.6); color: white; padding: 0.25rem 0.75rem; border-radius: 50px; font-size: 0.75rem; font-weight: 600;">
+            🔒 Datos protegidos
+        </div>
+    </div>
+    
+    <!-- Características -->
+    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 1.5rem;">
+        <span style="background: rgba(13, 115, 119, 0.1); color: var(--primary); padding: 0.4rem 0.8rem; border-radius: 50px; font-size: 0.8rem; font-weight: 600;">✓ Organizado por días</span>
+        <span style="background: rgba(13, 115, 119, 0.1); color: var(--primary); padding: 0.4rem 0.8rem; border-radius: 50px; font-size: 0.8rem; font-weight: 600;">✓ Control de tomas</span>
+        <span style="background: rgba(13, 115, 119, 0.1); color: var(--primary); padding: 0.4rem 0.8rem; border-radius: 50px; font-size: 0.8rem; font-weight: 600;">✓ Seguro y higiénico</span>
+    </div>
+</article>
+
+<style>
+    .spd-imagen-container:hover img {
+        filter: blur(0) !important;
+    }
+    
+    .spd-imagen-container:hover div[style*="background: linear-gradient"] {
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    
+    @media (max-width: 768px) {
+        .spd-imagen-container img {
+            height: 220px !important;
+        }
+    }
+</style>
+
+                <!-- Tensión -->
+                <article class="card servicio-card animate-fadeInUp stagger-3">
+                    <div class="servicio-icon">🩺</div>
+                    <h3>Toma de Tensión Arterial</h3>
+                    <p>Control sin coste adicional de la presión arterial. Te ayudamos a monitorizar tu tensión y te asesoramos sobre hábitos saludables.</p>
+                    <img src="fotos/tension.jpg" alt="Toma de tensión arterial" style="width: 100%; border-radius: var(--radius-sm); margin-top: 1.5rem;">
+                </article>
+
+                <!-- Glucosa -->
+                <article class="card servicio-card animate-fadeInUp stagger-4">
+                    <div class="servicio-icon">🩸</div>
+                    <h3>Medición de Glucosa</h3>
+                    <p>Mediciones de glucosa en sangre con asesoramiento sobre control diabético y alimentación.</p>
+                    <img src="fotos/glucosa.JPG" alt="Medición de glucosa" style="width: 100%; border-radius: var(--radius-sm); margin-top: 1.5rem;">
+                </article>
+
+                <!-- Ortopedia Concertada -->
+                <article class="card servicio-card animate-fadeInUp stagger-5">
+                    <div class="servicio-icon">🦴</div>
+                    <h3>Ortopedia Concertada</h3>
+                    <p>Servicio de ortopedia concertado con Osakidetza. Disponemos de una amplia gama de productos ortopédicos: vendajes, férulas, muletas, sillas de ruedas y material de rehabilitación.</p>
+                    <img src="fotos/ortopedia.jpg" alt="Ortopedia concertada con Osakidetza" style="width: 100%; border-radius: var(--radius-sm); margin-top: 1.5rem;">
+                </article>
+
+                <!-- Control de Peso e IMC -->
+                <article class="card servicio-card animate-fadeInUp stagger-6">
+                    <div class="servicio-icon">⚖️</div>
+                    <h3>Control de Peso e IMC</h3>
+                    <p>Medición sin coste adicional de peso y cálculo del Índice de Masa Corporal (IMC). Te asesoramos sobre hábitos saludables, nutrición y te ayudamos a alcanzar tus objetivos de bienestar.</p>
+                    <img src="fotos/bascula.jpg" alt="Control de peso e IMC" style="width: 100%; border-radius: var(--radius-sm); margin-top: 1.5rem;">
+                </article>
+
+                <!-- Cestas Personalizadas -->
+                <article class="card servicio-card animate-fadeInUp stagger-7">
+                    <div class="servicio-icon">🎁</div>
+                    <h3>Cestas Personalizadas</h3>
+                    <p>Preparamos cestas y regalos personalizados para cualquier ocasión. Cestas de bienvenida para bebés, regalos corporativos, cestas de cuidado personal o para eventos especiales.</p>
+                    <img src="fotos/cestas.jpg" alt="Cestas personalizadas" style="width: 100%; border-radius: var(--radius-sm); margin-top: 1.5rem;">
+                </article>
+            </div>
+
+            <div class="promo-banner animate-fadeInUp">
+                <h2>¿Necesitas más información?</h2>
+                <p>Visítanos o contacta con nosotros. Estaremos encantados de atenderte.</p>
+                <a href="Contacto.html" class="btn btn-accent" style="margin-top: 1.5rem;">Contactar</a>
+            </div>
+
+            <!-- Redes sociales con WhatsApp -->
+            <div class="redes-sociales" style="text-align: center; margin: 4rem 0; padding: 2rem; background: linear-gradient(135deg, rgba(13, 115, 119, 0.05), rgba(50, 224, 196, 0.05)); border-radius: 24px;">
+                <h3 style="color: var(--primary); margin-bottom: 2rem; font-size: 1.5rem; font-weight: 700;">Síguenos en redes</h3>
+                
+                <div class="redes-container" style="display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap; align-items: center;">
+                    
+                    <!-- Facebook -->
+                    <a href="https://www.facebook.com/farmaciajoncarral" target="_blank" rel="noopener noreferrer" class="red-social" style="text-decoration: none; transition: all 0.3s ease;">
+                        <div class="red-icono" style="width: 100px; height: 100px; border-radius: 24px; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,0.15); transition: all 0.3s ease; background: white; padding: 8px;">
+                            <img src="fotos/facebook.jpg" alt="Facebook" style="width: 100%; height: 100%; object-fit: cover; border-radius: 16px;">
+                        </div>
+                        <span class="red-nombre" style="display: block; margin-top: 0.75rem; color: var(--gray-dark); font-weight: 600; font-size: 0.95rem;">Facebook</span>
+                    </a>
+
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/farmaciajoncarral/" target="_blank" rel="noopener noreferrer" class="red-social" style="text-decoration: none; transition: all 0.3s ease;">
+                        <div class="red-icono" style="width: 100px; height: 100px; border-radius: 24px; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,0.15); transition: all 0.3s ease; background: white; padding: 8px;">
+                            <img src="fotos/instagram.jpg" alt="Instagram" style="width: 100%; height: 100%; object-fit: cover; border-radius: 16px;">
+                        </div>
+                        <span class="red-nombre" style="display: block; margin-top: 0.75rem; color: var(--gray-dark); font-weight: 600; font-size: 0.95rem;">Instagram</span>
+                    </a>
+
+                    <!-- Google Maps -->
+                    <a href="https://maps.app.goo.gl/wm9yKZXTFr1TbmyE9" target="_blank" rel="noopener noreferrer" class="red-social" style="text-decoration: none; transition: all 0.3s ease;">
+                        <div class="red-icono" style="width: 100px; height: 100px; border-radius: 24px; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,0.15); transition: all 0.3s ease; background: white; padding: 8px;">
+                            <img src="fotos/maps.jpg" alt="Google Maps" style="width: 100%; height: 100%; object-fit: cover; border-radius: 16px;">
+                        </div>
+                        <span class="red-nombre" style="display: block; margin-top: 0.75rem; color: var(--gray-dark); font-weight: 600; font-size: 0.95rem;">Maps</span>
+                    </a>
+
+                    <!-- WhatsApp -->
+                    <a href="https://wa.me/34688727564" target="_blank" rel="noopener noreferrer" class="red-social" style="text-decoration: none; transition: all 0.3s ease;">
+                        <div style="display: flex; align-items: center; gap: 0.75rem; padding: 1rem 1.5rem; background: #25d366; border-radius: 50px; color: white; box-shadow: 0 8px 24px rgba(37, 211, 102, 0.3); transition: all 0.3s ease;">
+                            <img src="fotos/whatsapp.jpg" alt="WhatsApp" style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover;">
+                            <span style="font-weight: 700; font-size: 1.1rem;">688 72 75 64</span>
+                        </div>
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <div class="footer-brand">🏥 Farmacia Jon Carral Tellitu</div>
+                    <p>Cuidando de tu salud desde 1992</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p>C/ Lehendakari Aguirre, 67<br>Basauri</p>
+                    <p>944 49 05 44</p>
+                    <p>farmaciacarraltellitu@gmail.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Horario</h4>
+                    <p>L-V: 9:00-13:30 / 16:30-19:30</p>
+                    <p>S: 10:00-13:30</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>FARMACIA JON CARRAL TELLITU. 1992-2026</p>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        .red-social:hover .red-icono {
+            transform: translateY(-10px) scale(1.05);
+            box-shadow: 0 16px 40px rgba(13, 115, 119, 0.25);
+        }
+        
+        .red-social:hover .red-nombre {
+            color: var(--primary);
+        }
+
+        .red-social:hover div[style*="background: #25d366"] {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 12px 30px rgba(37, 211, 102, 0.4);
+        }
+        
+        @media (max-width: 480px) {
+            .redes-container {
+                gap: 2rem !important;
+            }
+            
+            .red-icono {
+                width: 80px !important;
+                height: 80px !important;
+            }
+            
+            .red-nombre {
+                font-size: 0.85rem !important;
+            }
+        }
+    </style>
+
+    <script>
+        const navbarToggle = document.getElementById('navbarToggle');
+        const navbarMenu = document.getElementById('navbarMenu');
+        
+        navbarToggle.addEventListener('click', () => {
+            navbarMenu.classList.toggle('active');
+            navbarToggle.classList.toggle('active');
+        });
+        
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+        <!-- BOTÓN DE CONTACTO RÁPIDO FLOTANTE -->
+    <div class="contacto-flotante" style="position: fixed; bottom: 30px; right: 30px; z-index: 9999; display: flex; flex-direction: column; gap: 15px;">
+        
+        <!-- Botón de Llamada (Teléfono fijo 94...) -->
+        <a href="tel:944490544" class="btn-flotante btn-llamada" style="
+            width: 60px; 
+            height: 60px; 
+            border-radius: 50%; 
+            background: linear-gradient(135deg, #0d7377, #32e0c4); 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            box-shadow: 0 8px 24px rgba(13, 115, 119, 0.4); 
+            transition: all 0.3s ease; 
+            text-decoration: none;
+            position: relative;
+            overflow: hidden;
+        " title="Llamar a la farmacia">
+            <img src="fotos/Telefono.jpg" alt="Llamar" style="width: 35px; height: 35px; object-fit: cover; border-radius: 50%;">
+            <span class="tooltip" style="
+                position: absolute; 
+                right: 70px; 
+                background: #0d7377; 
+                color: white; 
+                padding: 8px 12px; 
+                border-radius: 8px; 
+                font-size: 14px; 
+                font-weight: 600; 
+                white-space: nowrap; 
+                opacity: 0; 
+                visibility: hidden; 
+                transition: all 0.3s ease;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            ">944 49 05 44</span>
+        </a>
+        
+        <!-- Botón de WhatsApp -->
+        <a href="https://wa.me/34688727564" target="_blank" rel="noopener noreferrer" class="btn-flotante btn-whatsapp" style="
+            width: 60px; 
+            height: 60px; 
+            border-radius: 50%; 
+            background: linear-gradient(135deg, #25d366, #128c7e); 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4); 
+            transition: all 0.3s ease; 
+            text-decoration: none;
+            position: relative;
+            overflow: hidden;
+            animation: pulse 2s infinite;
+            padding: 0;
+        " title="WhatsApp">
+            <img src="fotos/whatsapp.jpg" alt="WhatsApp" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+            <span class="tooltip" style="
+                position: absolute; 
+                right: 70px; 
+                background: #25d366; 
+                color: white; 
+                padding: 8px 12px; 
+                border-radius: 8px; 
+                font-size: 14px; 
+                font-weight: 600; 
+                white-space: nowrap; 
+                opacity: 0; 
+                visibility: hidden; 
+                transition: all 0.3s ease;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            ">WhatsApp</span>
+        </a>
+        
+    </div>
+
+    <style>
+        /* Animación de pulso para WhatsApp */
+        @keyframes pulse {
+            0% { box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4); }
+            50% { box-shadow: 0 8px 24px rgba(37, 211, 102, 0.7), 0 0 0 10px rgba(37, 211, 102, 0.1); }
+            100% { box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4); }
+        }
+        
+        /* Efectos hover */
+        .btn-flotante:hover {
+            transform: scale(1.1) translateY(-5px);
+        }
+        
+        .btn-llamada:hover {
+            box-shadow: 0 12px 32px rgba(13, 115, 119, 0.6);
+        }
+        
+        .btn-whatsapp:hover {
+            box-shadow: 0 12px 32px rgba(37, 211, 102, 0.6);
+            animation: none;
+        }
+        
+        /* Mostrar tooltip en hover */
+        .btn-flotante:hover .tooltip {
+            opacity: 1;
+            visibility: visible;
+            right: 75px;
+        }
+        
+        /* Responsive: en móvil los botones son más pequeños y están más arriba */
+        @media (max-width: 768px) {
+            .contacto-flotante {
+                bottom: 20px;
+                right: 20px;
+                gap: 12px;
+            }
+            
+            .btn-flotante {
+                width: 55px;
+                height: 55px;
+            }
+            
+            /* Ocultar tooltips en móvil */
+            .tooltip {
+                display: none;
+            }
+        }
+        
+        /* En pantallas muy pequeñas, subir los botones para no tapar el footer */
+        @media (max-width: 480px) {
+            .contacto-flotante {
+                bottom: 80px;
+            }
+        }
+    </style>
+</body>
+</html>
